@@ -1,0 +1,246 @@
+/*Nav*/
+.nav{
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    border-bottom: 1px solid #0000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid #c3c3c34f;
+    padding: 5px 0px;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+
+
+}
+/*Boton de nav*/
+.btnNav{
+    display: inline-block;
+    width: 20%;
+    height: 60%;
+
+}
+.btnNav svg{
+    width: 100%;
+    height: 100%;
+    fill: #010101bd;
+}
+
+/*Logo*/
+.LogoNav{
+    width: 50%;
+    height: 60%;
+}
+.LogoNav__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*User*/
+.user{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user__img{
+    width: 55px;
+    height: 55px;
+
+}
+.user__img img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 50%;
+}
+.menu{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 75%;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    z-index: 13;
+    transform: translateX(-100%);
+    transition: transform .4s;
+}
+.menu__close{
+    margin-top: 15px;
+    width: 90%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#BtnClose{
+    width: 25px;
+    height: 25px;
+    fill: #000;
+}
+.listMenu{
+    width: 90%;
+    height: 40%;
+    margin-top: 15%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.listMenu__li{
+    width: 95%;
+    height: 50px;
+    padding: 0px 8px;
+    border-bottom: 1px solid #00000028;
+    margin-bottom: 9px;
+}
+.listMenu__li a {
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.listMenu__li:hover{
+    background-color: #fad331;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.menu__iniciar{
+    width: 90%;
+    height: 15%;
+    margin-top: 15%;
+    display: grid;
+    place-items: center;
+}
+.menu__iniciar a{
+    width: 75%;
+    height: 50px;
+    background-color: #000;
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    
+}
+.menu__iniciar a:hover{
+    background-color: #fad331;
+}
+/*PROFILE*/
+.profile{
+    position: fixed;
+    top: 70px;
+    right: 0px;
+    height: 30%;
+    width: 60%;
+    background-color:#fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding:15px 0px ;
+    display: none;
+    z-index: 5;
+    box-shadow: 0px 0px 4px rgba(0,0,0,.2);
+}
+.profile__user{
+    width: 90%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid #00000028;
+}
+.user__imagen{
+    width: 40px;
+    height: 40px;
+}
+.user__imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.user__name{
+    width: 80%;
+    height: max-content;
+    text-align: start;
+    padding-left: 15px;
+    font-size: 1rem;
+    color: #000;
+}
+.profileClose{
+    width: 90%;
+    height: 30%;
+}
+.profileClose__a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+}
+.profileClose__a-figure{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #00000081;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+.profileClose__a-figure svg{
+    width: 60%;
+    height: 60%;
+    fill: #fff;
+}
+
+.profileClose__a-text{
+    width: 80%;
+    height: max-content;
+    text-align: start;
+    padding-left: 15px;
+    font-size: 1rem;
+    color: #000;
+}
+
+/*Modal*/
+.modal{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #0000004f;
+    backdrop-filter: blur(.04em);
+    visibility: hidden;
+    transition: .2s;
+}
+
+/*JS menu*/
+.showMenu{
+    transform: translate(0%);
+}
+.showModal{
+    visibility: visible;
+}
+.showProfile{
+    display: flex;
+}

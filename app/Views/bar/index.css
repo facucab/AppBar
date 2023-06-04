@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/*Generales*/
+.titulos{
+    display: inline-block;
+    width: 90%;
+    font-size: 1.2rem;
+    color: #6d6d6d;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: start;
+}
+.text{
+    font-size: 1.1rem;
+    color: #0b0f1b;
+    font-weight: 400;
+}
+/*MAIN*/
+.main{
+    margin-top: 110px;
+}
+
+.tituloBar{
+    display: inline-block;
+    width: 90%;
+    font-size: 1.3rem;
+    color: #5e5e5e;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-align: start;
+    padding-left: 25px;
+}
+.subheader{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    padding-right: 15px;
+    position: relative;
+}
+
+.subheader__icon{
+    width: 45px;
+    height: 45px;
+    background-color: #d6d6d685;
+    border-radius: 50%;
+    margin-left: 10px;
+    display: grid;
+    place-items: center;
+}
+.subheader__icon svg{
+    width: 50%;
+    height: 50%;
+    fill: #535353 ;
+}
+/*Modal de share*/
+.ModalShare{
+    width: 40%;
+    height: 80px;
+    background:#fff;
+    position: absolute;
+    top: 57px;
+    right:  4px;
+    box-shadow: 0px 0px 1px rgba(0 0 0 /.2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    display: none;
+    z-index: 3;
+}
+
+.ModalSHare__icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fcd62b;
+    display: grid;
+    place-items: center;
+}
+.ModalSHare__icon svg{
+    width: 50%;
+    height: 50%;
+    fill: #fff ;
+}
+/*carrusel*/
+.carrusel{
+    width: 90%;
+    min-width: 260px;
+    height: 280px;
+    margin: 35px auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+/*Botones*/
+.carrusel__prev , .carrusel__next{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0 0 0 /.2);
+    position: absolute;
+    top: calc(50% - 40px);
+    border-radius: 2px;
+    display: grid;
+    place-items: center;
+    z-index: 3;
+}
+.carrusel__prev {
+    left: 0px;
+}
+.carrusel__next{
+    right: 0;
+}
+.carrusel__prev svg , .carrusel__next svg{
+    width: 80%;
+    height: 80%;
+    fill: #fff;
+}
+/*CarruselBOx*/
+.carruselBox{
+    min-width: 100%;
+    height: 100%;
+    transition: .3s;
+    display: none;
+}
+.carruselBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 5px;
+}
+
+.active{display: block;}
+.movNext{
+    transform: translateX(-100%);
+}
+.movPrev{
+    transform: translateX(0);
+}
+/**/
+.acerca{
+    width: 90%;
+    margin: 2px auto;
+    padding: 10px;
+}
+.acercaDesc{
+    width: 100%;
+    height: max-content;
+    display: grid;
+    place-items: center;
+}
+.acercaDesc__p{
+    text-align: start;
+    margin-top: 10px;
+}
+/*Redes*/
+.redes{
+    width: 100%;
+    height: 70px;
+    background-color: #ffd51bd5;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.redes__a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+}
+.redes__a svg{
+    width: 70%;
+    height: 70%;
+    fill: #fff;
+}
+
+/*caract*/
+.caract{
+    width: 90%;
+    height: max-content;
+    margin: 25px auto;
+    padding: 10px 0px;
+}
+.listcaract{
+    width: 100%;
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.listcaract__li{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 2px;
+}
+.listcaract__li svg{
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+    fill: #ecc205;
+}
+.listcaract__li-p{
+    font-size: 1.1rem;
+    color: #535353;
+}
+/*Maps*/
+.ubicacion{
+    width: 90%;
+    height: max-content;
+    margin: 10px auto;
+}
+.maps{
+    width: 95%;
+    height: 250px;
+    margin: 25px auto;
+}
+.maps iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+
+
+
+/*JS*/
+.ClickFavorito{
+    background-color: #fcd62b;
+}
+.ClickFavorito svg{
+    fill: #fff;
+}
+.ModalShareShow{
+    display: flex;
+}

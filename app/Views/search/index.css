@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    width: 100%;
+    height: max-content;
+    margin-top: 100px;
+}
+.search{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.search__input{
+    width: 75%;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding-left: 15px;
+    color: #000;
+    font-weight: 400;
+    border: 1px solid #f0f0f0;
+}
+.search__btn{
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 2px;
+    background-color: #fad331;
+    
+}
+.search__btn svg{
+    width: 65%;
+    height: 65%;
+    fill: #fff;
+}
+.search__input::placeholder{
+    font-size: 1rem;
+    color: #818181;
+}
+.search__input:focus{
+    box-shadow: 0px 0px 5px rgba(0 0 0 /.1);
+}
+/**/
+.bares{
+    margin-top: 40px;
+    width: 100%;
+    height: max-content;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.bares__box{
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px rgba(0 0 0 /.1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    margin-top: 15px;
+}
+.bares__box-img{
+    width: 140px;
+    height: 100%;
+}
+.bares__box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: start center;
+}
+
+.bares__info{
+    width: calc(100% - 140px);
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+}
+.bares__info-titulo{
+    display: inline-block;
+    width: 100%;
+    height: 30%;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #333333;
+    font-weight: 500;
+}
+.bares__info-text{
+    display: inline-block;
+    width: 100%;
+    height: 30%;
+    font-size: 1rem;
+    text-align: start;
+    margin-top: 9px;
+    padding:  0px 10px;
+    color: #333333d2;
+}
+.favoritosMsg{
+    width: 90%;
+    height: 40vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.favoritosMsg h4{
+    padding-top: 15px;
+    font-size: 1rem;
+    text-align: center;
+    color: #646464;
+    font-weight: 400;
+}
+.favoritoIcon{
+    margin-top: 15px;
+    width: 160px;
+    height:130px ;
+    display: grid;
+    place-items: center;
+}
+.favoritoIcon svg{
+    widows: 70%;
+    height: 70%;
+    fill: #c0c0c0;
+}
